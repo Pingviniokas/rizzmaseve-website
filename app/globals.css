@@ -1,0 +1,136 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-15px) rotate(2deg); 
+  }
+  75% { 
+    transform: translateY(15px) rotate(-2deg); 
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) translateX(20vw) rotate(360deg);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  color: white;
+  font-size: 1.5rem;
+  animation: snowfall linear infinite;
+  pointer-events: none;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glass-morphism {
+  @apply backdrop-blur-lg bg-white/10 border border-white/20;
+}
+
+.neon-text {
+  @apply [text-shadow:0_0_10px_currentColor];
+}
+
+.neon-glow {
+  @apply [filter:drop-shadow(0_0_10px_currentColor)];
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(20vw) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes lights {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.snowflake {
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 10px white;
+  animation: snowfall linear infinite;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.animate-lights {
+  animation: lights 2s ease-in-out infinite;
+}
+
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(20vw) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+.snowflake {
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 10px white;
+  animation: snowfall linear infinite;
+  pointer-events: none;
+  z-index: 50;
+}
+
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(20vw) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+.snowflake {
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 10px white;
+  animation: snowfall linear infinite;
+  pointer-events: none;
+  z-index: 50;
+}
