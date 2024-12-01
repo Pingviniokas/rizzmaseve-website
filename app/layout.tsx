@@ -8,8 +8,8 @@ import CustomCursor from '@/components/CustomCursor'
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GRINCHGUY - The Chillest Grinch on Solana',
-  description: 'Where Chill Vibes Meet Grinch Energy',
+  title: 'RizmasEve',
+  description: 'Ho Ho Ho',
 }
 
 export default function RootLayout({
